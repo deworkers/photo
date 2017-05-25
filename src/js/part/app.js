@@ -108,25 +108,92 @@ $(document).ready(function() {
     };
     $.datepicker.setDefaults($.datepicker.regional['ru']);
 
-    
-    $('.main-slider').cycle({ 
-        fx:      'turnRight',
-        sync:     true,
-        timeout:  4000,
-        before: function() {
-            $(this).find('.main-slider-descr').width(0);
-            setTimeout(function() {
+    var mainSlider = function()    {
+        $('.main-slider').cycle({ 
+            fx:      'turnLeft',
+            sync:     true,
+            timeout:  4000,
+            before: function() {
+                $(this).find('.main-slider-descr').width(0);
+                setTimeout(function() {
+                    $(this).find('.main-slider-descr').show();
+                }, 100);
                 $(this).find('.main-slider-descr').hide();
-            }, 100);
+            },
+            after: function() {
+                $(this).find('.main-slider-descr').show();
+                $(this).find('.main-slider-descr').animate({
+                    'width': '390px'
+                }, 300);
+            }
+        });
+    }
 
-        },
-        after: function() {
-            $(this).find('.main-slider-descr').show();
+    mainSlider();
 
-            $(this).find('.main-slider-descr').animate({
-                'width': '390px'
-            }, 300);
-        }
+    $(window).resize(function() {
+        mainSlider();
     });
+
+    $('.slider-next').on('click', function() {
+        $('.main-slider').cycle('next');
+    });
+
+    $('.slider-prev').on('click', function() {
+        $('.main-slider').cycle('prev');
+    });
+
+    var servicesSlider = new Swiper ('.services-one', {
+        // Optional parameters
+        loop: false,
+        breakpoints: {
+            1360: {
+                slidesPerView: 5, 
+            },
+            1920: {
+                slidesPerView: 7,
+            }
+        },
+        paginationClickable: true,
+        spaceBetween: 10,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });       
+
+    var servicesSliderRow = new Swiper ('.services-one-row', {
+        loop: false,
+        slidesPerView: 7,
+        slidesPerColumn: 2,
+        breakpoints: {
+            1380: {
+                slidesPerView: 5, 
+            },
+            1920: {
+                slidesPerView: 7,
+            }
+        },
+        paginationClickable: true,
+        spaceBetween: 10,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    }); 
+
+    var servicesSliderRow = new Swiper ('.personal-inn', {
+        // Optional parameters
+        loop: false,
+        breakpoints: {
+            1380: {
+                slidesPerView: 5, 
+            },
+            1920: {
+                slidesPerView: 7,
+            }
+        },
+        paginationClickable: true,
+        spaceBetween: 20,
+        pagination: '.swiper-pagination'
+    });  
 
 });
