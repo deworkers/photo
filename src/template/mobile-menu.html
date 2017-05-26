@@ -1,23 +1,15 @@
-<div class="wrap">
-    <div class="head">
-        <a href="#" class="head-logo">
-            <img src="/img/logo.png" alt="">
-        </a>
-        <div class="head-since">
-            Мы работаем<br>для Вас с 1997 г.
-        </div>
-        <div class="head-top">
-            <div class="head-top__adres">Екатеринбург, улица Победы, 42, эт. 1</div>
-            <div class="head-top__del">|</div>
-            <div class="head-top__phone">+7 (909) 003-04-90</div>
-            <div class="head-top__del">|</div>
-            <div class="head-top__phone head-top__phone--city">+7 (343) 336-96-90</div>
-            <div class="head-top__del">|</div>
-            <a href="#search" class="head-top__search open_modal"></a>
-            <a href="#menu" class="mobile-menu-open open_modal">Меню</a>
-        </div>
-        <ul class="head-menu">
-            <li class="menu-one menu-one--yellow"><a href="#">Печать</a>
+<div class="modal mobile-menu" id="menu">
+	<div class="mobile-menu__close"></div>
+	<div class="mobile-menu-top">
+		<div class="mobile-menu__adres">Екатеринбург, улица Победы, 42, эт. 1</div>
+		<div class="mobile-menu__phone">+7 (909) 003-04-90</div>
+		<div class="mobile-menu__del">|</div>
+		<div class="mobile-menu__phone">+7 (343) 336-96-90</div>
+	</div>
+	<div class="mobile-menu-box">
+		<ul class="mobile-menu-list">
+            <li class="mobile-menu-one mobile-menu-one--yellow">
+            	<a href="#">Печать</a>
                 <ul>
                     <li><a href="#">Широкоформатная печать</a></li>
                     <li><a href="#">Латексная печать</a></li>
@@ -63,7 +55,7 @@
                     </li>
                 </ul>
             </li>
-            <li class="menu-one menu-one--red"><a href="#">Сувениры</a>
+            <li class="mobile-menu-one mobile-menu-one--red"><a href="#">Сувениры</a>
                 <ul>
                     <li><a href="#">Печать на футболках</a></li>
                     <li><a href="#">Печать на кружках</a></li>
@@ -76,7 +68,7 @@
                     <li><a href="#">Открытка-трансформер</a></li>
                 </ul>
             </li>
-            <li class="menu-one menu-one--green"><a href="#">Услуги</a>
+            <li class="mobile-menu-one mobile-menu-one--green"><a href="#">Услуги</a>
                 <ul>
                     <li><a href="#">Изготовление визиток</a></li>
                     <li><a href="#">Изготовление офисных табличек</a></li>
@@ -91,7 +83,7 @@
                     <li><a href="#">Художественная и предметная съёмка</a></li>
                 </ul>
             </li>
-            <li class="menu-one menu-one--blue"><a href="#">Товары</a>
+            <li class="mobile-menu-one mobile-menu-one--blue"><a href="#">Товары</a>
                 <ul>
                     <li><a href="#">Фотоальбомы</a></li>
                     <li><a href="#">Фоторамки</a></li>
@@ -102,12 +94,22 @@
                     <li><a href="#">Багет по размерам заказчика</a></li>
                 </ul>
             </li>
-            <li class="menu-one menu-one--red"><a href="#">Акции</a></li>
-            <li class="menu-one menu-one--green"><a href="#">Новости</a></li>
-            <li class="menu-one menu-one--yellow"><a href="#">Контакты</a></li>
+            <li class="mobile-menu-one"><a href="#">Акции</a></li>
+            <li class="mobile-menu-one"><a href="#">Новости</a></li>
+            <li class="mobile-menu-one"><a href="#">Контакты</a></li>
         </ul>
-
-        //= slider.html
-
-    </div> 
+	</div>
+	<div class="mobile-menu-bottom">
+		<div class="mobile-menu-social">
+            <a href="#" class="social__vk"><i></i></a>
+            <a href="#" class="social__fb"><i></i></a>
+            <a href="#" class="social__tw"><i></i></a>
+        </div>
+        <div class="mobile-menu-search">
+        	<form id="search-form" action="" method="post" >
+				<input class="search-form__input search-form__input--mobile" type="text" placeholder="Введите искомое слово">
+				<button class="search-form__button search-form__button--mobile"></button>
+			</form>
+        </div>
+	</div>
 </div>

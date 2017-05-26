@@ -1,13 +1,17 @@
 
 @media screen and (max-width: 1380px) {
     .wrap {
-        width: 1080px;
+        width: 1000px;
     }
 
     .menu-one {
         a {
             padding: 15px 15px !important;
         }
+    }
+
+    .head {
+        padding: 0 60px;
     }
 
     .head-top__phone,
@@ -35,20 +39,26 @@
         font-size: 12px;
     }
 
+    .slider-box {
+        padding: 50px 0 90px;
+    }
+
+
     .main-slider {
-        width: 620px;
         height: 395px;
     }
 
     .main-slider__img {
-        height: 365px !important;
-        width: 590px;
+        height: 395px !important;
+        width: 615px;
     }
+
+
 
     .main-slider-descr {
         width: 300px;
-        left: -300px;
-        top: 30px;
+        top: 50px;
+        left: 30px;
     }
 
     .main-slider-descr__title {
@@ -101,7 +111,8 @@
     }
 
     .slider-nav {
-        width: 620px;
+        top: 50px;
+        width: 590px;
         height: 395px;
     }
 
@@ -110,14 +121,202 @@
         height: 395px;
     }
 
+    .services-one__catalog {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+
+    .swiper-button-prev {
+        right: 50px;
+    }
+
 }
 
 @media screen and (max-width: 1024px) { // планшет вертикально
+    .wrap {
+        width: 760px;
+    }
 
+    .head-menu,
+    .head-top__phone--city,
+    .head-top__adres,
+    .head-top__del,
+    .head-top__search {
+        display: none;
+    }
+
+    .head {
+        padding: 0 20px;
+    }
+
+    .head-logo {
+        top: 20px;
+        left: 20px;
+    }
+
+    .head-since {
+        top: 35px;
+        left: 250px;
+        line-height: 20px;
+    }
+
+    .slider-box {
+        padding: 50px 0 70px;
+    }
+
+    .main-slider {
+        height: 350px;
+    }
+
+    .main-slider-descr {
+        left: 0px;
+    }
+
+    .main-slider-descr__title {
+        font-size: 32px;
+        line-height: 40px;
+        width: 250px;
+    }
+
+    .main-slider-descr__text {
+        font-size: 12px;
+        line-height: 18px;
+        width: 180px;
+    }
+
+    .main-slider__img {
+        width: 490px;
+        height: 350px !important;
+    }
+
+
+    .slider-nav {
+        top: 50px;
+        width: 490px;
+        height: 350px;
+    }
+
+    .slider-next,
+    .slider-prev {
+        height: 350px;
+    }
+
+    .services {
+        overflow: hidden;
+    }
+
+    .services-one,
+    .services-one-row {
+        width: ~'calc(100% + 180px)';
+        margin-left: -90px;
+    }
+
+    .services-one__catalog {
+        left: 60px;
+    }
+
+    .swiper-button-next {
+        right: 60px;
+    }
+
+    .swiper-button-prev {
+        right: 110px;
+    }
+
+    .about__image {
+        display: none;
+    }
+
+    .about__title,
+    .about__text {
+        margin-left: 0;
+        margin-bottom: 20px;
+
+        br {
+            display: none;
+        }
+    }
+
+    .about  {
+        padding: 50px 20px;
+    }
+
+    .personal {
+        padding: 50px 0;
+        overflow: hidden;
+    }
+
+    .personal-inn {
+        width: ~'calc(100% + 180px)';
+        margin-left: -90px;
+    }
+
+    .news-main {
+        padding: 50px 20px;
+    }
+    
+    .news-main-one {
+        width: 220px;
+    }
+
+    .footer-coll {
+        width: 290px;
+    }
+
+    .footer-coll--last {
+        width: 50%;
+        position: absolute;
+        bottom: 25px;
+        right: 0;
+    }
+
+    .footer-contact {
+        padding-left: 0;
+    }
+
+    .footer-social {
+        bottom: 0;
+        display: inline-block;
+        vertical-align: top;
+        width: 49%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footer-made {
+        bottom: 0;
+        display: inline-block;
+        vertical-align: top;
+        width: 49%;
+        padding-left: 0px;
+    }
+    
+    .footer-copy {
+        padding: 30px 0;
+    }
+
+    .services-item-bottom__title {
+        font-size: 16px;
+    }
+
+    .head-top__phone {
+        font-size: 18px;
+    }
+
+    .mobile-menu-open {
+        display: inline-block;
+    }
+
+    .footer-inn {
+        padding: 0 20px;
+    }
 }
 
 @media screen and (max-width: 768px) { // планшет горизонтально
-
+    
 }
 
 @media screen and (max-width: 480px) { // телефон
