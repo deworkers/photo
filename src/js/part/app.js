@@ -131,58 +131,15 @@ $(document).ready(function() {
         // Optional parameters
         loop: false,
         breakpoints: {
-            480: {
+            360: {
                 slidesPerView: 3,
+                spaceBetween: 10,
             },
             760: {
                 slidesPerView: 4,
+                spaceBetween: 15,
             },
-            1360: {
-                slidesPerView: 5, 
-            },
-            1920: {
-                slidesPerView: 7,
-            }
-        },
-        paginationClickable: true,
-        spaceBetween: 10,
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev'
-    });       
-
-    var servicesSliderRow = new Swiper ('.services-one-row', {
-        loop: false,
-        slidesPerColumn: 2,
-        breakpoints: {
-            480: {
-                slidesPerView: 3,
-            },
-            760: {
-                slidesPerView: 4,
-            },
-            1380: {
-                slidesPerView: 5, 
-            },
-            1920: {
-                slidesPerView: 7,
-            }
-        },
-        paginationClickable: true,
-        spaceBetween: 10,
-        pagination: '.swiper-pagination',
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev'
-    }); 
-
-    var personalSlider = new Swiper ('.personal-inn', {
-        // Optional parameters
-        loop: false,
-        breakpoints: {
-            480: {
-                slidesPerView: 3,
-            },
-            760: {
+            1024: {
                 slidesPerView: 4,
             },
             1380: {
@@ -194,6 +151,67 @@ $(document).ready(function() {
         },
         paginationClickable: true,
         spaceBetween: 20,
+        centeredSlides: true,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    });       
+
+    var servicesSliderRow = new Swiper ('.services-one-row', {
+        loop: false,
+        slidesPerColumn: 2,
+        breakpoints: {
+            360: {
+                slidesPerView: 3,
+                spaceBetween: 10,
+            },
+            760: {
+                slidesPerView: 4,
+                spaceBetween: 15,
+            },
+            1024: {
+                slidesPerView: 4,
+            },
+            1380: {
+                slidesPerView: 5, 
+            },
+            1920: {
+                slidesPerView: 7,
+            }
+        },
+        paginationClickable: true,
+        spaceBetween: 20,
+        centeredSlides: true,
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev'
+    }); 
+
+    var personalSlider = new Swiper ('.personal-inn', {
+        // Optional parameters
+        loop: false,
+        breakpoints: {
+            360: {
+                slidesPerView: 3,
+                spaceBetween: 15,
+            },
+            760: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+            },
+            1024: {
+                slidesPerView: 4,
+            },
+            1380: {
+                slidesPerView: 5, 
+            },
+            1920: {
+                slidesPerView: 7,
+            }
+        },
+        paginationClickable: true,
+        spaceBetween: 20,
+        centeredSlides: true,
         pagination: '.swiper-pagination'
     });
 
