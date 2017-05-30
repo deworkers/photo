@@ -211,24 +211,24 @@
 
     .services-one,
     .services-one-row {
-        width: ~'calc(100% + 180px)';
-        margin-left: -90px;
+        width: ~'calc(100% + 80px)';
+        margin-left: -40px;
     }
 
     .services-one-inn {
-        margin-left: 60px;
+       // margin-left: 60px;
     }
 
     .services-one__catalog {
-        left: 60px;
+        left: 20px;
     }
 
     .swiper-button-next {
-        right: 60px;
+        right: 20px;
     }
 
     .swiper-button-prev {
-        right: 110px;
+        right: 80px;
     }
 
     .about__image {
@@ -328,15 +328,16 @@
 
 @media screen and (max-width: 760px) { // планшет горизонтально
     .services {
-        padding: 0 80px;
+        padding: 0 20px;
     }
 
     .services-one, .services-one-row {
-        
+        margin-left: -10px;
+        width: ~'calc(100% + 20px)';
     }
 
     .services-one-inn {
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     .services-one__catalog {
@@ -346,7 +347,7 @@
         border-radius: 20px;
         transform: scale(0.75);
         top: -5px;
-        left: 20px;
+        left: 0px;
 
         &:before {
             top: 12px;
@@ -362,19 +363,19 @@
         font-size: 24px;
         margin-bottom: 30px;
         text-align: left;
-        padding-left: 60px;
+        padding-left: 50px;
     }
 
     .swiper-button-next {
         transform: scale(0.75);
         top: -5px;
-        right: 20px;
+        right: 0px;
     }
 
     .swiper-button-prev {
         transform: scale(0.75);
         top: -5px;
-        right: 60px;
+        right: 40px;
     }
 
     .swiper-pagination {
@@ -415,7 +416,12 @@
     }
 
     .personal-inn {
-        padding-left: 80px;
+        margin-left: -20px;
+        width: ~'calc(100% + 40px)';
+    }
+
+    .personal-list {
+        padding-left: 20px;
     }
 
     .personal-one img {
@@ -456,14 +462,22 @@
             margin-right: 0;
             display: none;
         }
+
+        a {
+            font-size: 12px;
+            text-align: left;
+            padding: 20px 10px;
+        }
     }
 
     .news-main-one__date {
         font-size: 9px;
+        margin-bottom: 10px;
     }
     
     .news-main-one__title {
         font-size: 15px;
+        margin-bottom: 10px;
     }
 
     .news-main-one__text {
@@ -559,15 +573,17 @@
     
     .mobile-menu .j-submenu>a {
         font-size: 14px;
-
+        
         &:after {
             top: 15px;
-           transform: scale(.6); 
+            right: 20px;
+            transform: scale(.6); 
         }
     }
 
     .mobile-menu-one > a {
         font-size: 12px;
+        padding: 17px 15px;
     }
 
     .mobile-menu-search {

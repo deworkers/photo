@@ -131,6 +131,9 @@ $(document).ready(function() {
         // Optional parameters
         loop: false,
         breakpoints: {
+            480: {
+                slidesPerView: 3,
+            },
             760: {
                 slidesPerView: 4,
             },
@@ -152,6 +155,9 @@ $(document).ready(function() {
         loop: false,
         slidesPerColumn: 2,
         breakpoints: {
+            480: {
+                slidesPerView: 3,
+            },
             760: {
                 slidesPerView: 4,
             },
@@ -169,10 +175,13 @@ $(document).ready(function() {
         prevButton: '.swiper-button-prev'
     }); 
 
-    var servicesSliderRow = new Swiper ('.personal-inn', {
+    var personalSlider = new Swiper ('.personal-inn', {
         // Optional parameters
         loop: false,
         breakpoints: {
+            480: {
+                slidesPerView: 3,
+            },
             760: {
                 slidesPerView: 4,
             },
@@ -238,5 +247,7 @@ $(document).ready(function() {
     $('.mobile-menu-back').on('click', function() {
         $(this).parent().parent('.j-open').hide();
     });
+
+    $('.services-item-bottom__title').hyphenate();
 
 });
