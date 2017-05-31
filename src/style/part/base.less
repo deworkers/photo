@@ -4,7 +4,8 @@
 @font-alt: 'Arimo', sans-serif;
 
 @color_white: #fff;
-@color_text: #000;
+@color_text: #595959;
+@color_black: #000;
 @color_link: #003777;
 @color_blue: #003777;
 @color_grey: #8e8e8e;
@@ -51,8 +52,8 @@ img {
 }
 
 p {
-    font-size: 18px;
-    margin: 0 0 20px 0;
+    font-size: 16px;
+    margin: 0 0 30px 0;
     line-height: 26px;
 }
 
@@ -64,6 +65,70 @@ a {
 
 button {
     transition: all 0.2s;
+}
+
+cite {
+    display: block;
+    font-size: 28px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-style: normal;
+    text-align: center;
+    max-width: 720px;
+    margin: 40px auto;
+
+    &:after {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background: @color_text;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+
+    }
+
+    &:before {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background: @color_text;
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+    }
+}
+
+blockquote {
+    display: block;
+    font-size: 28px;
+    letter-spacing: 2px;
+    line-height: 40px;
+    font-style: normal;
+    text-align: center;
+    max-width: 720px;
+    margin: 40px auto;
+
+    &:after {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background: @color_text;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+
+    }
+
+    &:before {
+        content: "";
+        .sprite(@blockquote);
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 40px;
+
+    }
 }
 
 a:hover {
@@ -78,26 +143,29 @@ a:hover {
 }
 
 h1 {
-    .head(25px, 30px, normal, @color_text);
+    .head(25px, 30px, normal, @color_black);
     font-weight: 400;
-    text-transform: uppercase;
 }
 
 h2 {
-    .head(22px, 25px, normal, @color_text);
+    .head(30px, 40px, 36px, @color_black);
+    letter-spacing: 2px;
+    font-weight: 400;
 }
 
 h3 {
-    .head(18px, 20px, normal, @color_text);
+    .head(20px, 30px, 26px, @color_black);
+    font-weight: 700;
 }
 
 h4 {
-    .head(16px, 15px, normal, @color_text);
+    .head(16px, 15px, normal, @color_black);
 }
 
 h5 {
-    .head(13px, 15px, normal, @color_text);
-    font-weight: 700;
+    .head(14px, 15px, normal, @color_text);
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 
@@ -111,12 +179,60 @@ td{
 
 ul, ol{
     margin:0 0 25px 0px; 
-    padding: 0 0 0 30px;
+    padding: 0 0 0 20px;
 }
 ul li, ol li{
-    font-size: 14px;
-    margin-bottom:5px;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom:20px;
 }
+
+ol ol {
+    margin: 20px 0;
+    list-style-type: lower-alpha;
+}
+
+ul ul {
+    margin: 20px 0;
+}
+
+.table {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 40px;
+
+    th {
+        text-align: left;
+        font-weight: 700;
+        padding: 25px 20px;
+        border: 1px solid #e7e9ed;
+    }
+
+    td {
+        padding: 25px 20px;
+        border: 1px solid #e7e9ed;
+    }
+}
+
+.table-bg {
+    font-size: 14px;
+    width: 100%;
+    margin-bottom: 40px;
+
+    th {
+        text-align: left;
+        font-weight: 700;
+        padding: 25px 20px;
+        border: 1px solid #e7e9ed;
+        background: #f7f8fb;
+    }
+
+    td {
+        padding: 25px 20px;
+        border: 1px solid #e7e9ed;
+    }
+}
+
 
 .clearfix {
     zoom: 1;
