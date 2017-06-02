@@ -1,4 +1,4 @@
-@import "sprite.less";
+
 @import "mixin.less";
 @import "base.less";
 
@@ -92,7 +92,7 @@ body {
 
         a {
             display: block;
-            padding: 20px 25px;
+            padding: 15px 25px;
             text-decoration: none;
         }
 
@@ -460,6 +460,7 @@ body {
 
 .services-item-bottom {
     padding: 10px;
+    height: 80px;
 }
 
 .services-item-bottom__title {
@@ -470,6 +471,9 @@ body {
 .services-item-bottom__section {
     color: #9a9a9a;
     font-size: 11px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
 }
 
 .swiper-pagination {
@@ -619,6 +623,7 @@ body {
 
 .personal-one__position {
     font-size: 13px;
+    margin-bottom: 5px;
     color: #9a9a9a;
 
 }
@@ -715,6 +720,12 @@ body {
         height: 164px;
         background-image: url(/img/fon-footer.png);
         background-color: #326fcc;
+    }
+}
+
+.footer-white {
+    &:before {
+        background-color: #fff;
     }
 }
 
@@ -1143,6 +1154,12 @@ body {
 
     a {
         color: #353f56;
+        display: inline-block;
+        border-bottom: 1px solid #353f56;
+
+        &:hover {
+            border-color: transparent;
+        }
     }
 }
 
@@ -1157,9 +1174,439 @@ body {
 .content {
     background: #fff;
     padding: 70px 70px;
+
+    .column {
+        columns: 2;
+        column-gap: 40px;
+    }
+
 }
+
+
 
 .content-inn {
     max-width: 880px;
     margin: 0 auto;
+}
+
+.personal-list--content {
+    text-align: center;
+    .personal-one {
+        text-align: left;
+        padding-top: 0;
+        margin: 0 10px 50px;
+    }
+}
+
+
+
+
+
+.news-list {
+    word-spacing: -0.35em;
+}
+
+.news-one {
+    width: 280px;
+    border-radius: 5px;
+    overflow: hidden;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+
+.news-one__img {
+    height: 185px;
+    img {
+        width: 100%;
+    }
+}
+
+.news-one-inn {
+    background: #f7f8fb;
+    padding: 20px;
+    height: 240px;
+}
+
+.news-one__date {
+    color: #8e8e8e;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.news-one__title {
+    display: block;
+    color: #353f56;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.news-one__text {
+    color: #595959;
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.pagination {
+    color: #353f56;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 50px;
+
+    a {
+        font-weight: 400;
+        color: #858995;
+        text-decoration: none;
+
+        &:hover {
+            color: #353f56;
+        }      
+    }
+
+    i {
+        font-weight: 400;
+        margin: 0 10px;
+        color: #858995;
+    }
+}
+
+
+
+
+.news-big-img {
+    width: 770px;
+    height: 500px;
+    margin: 0 auto;
+    margin-top: -140px;
+    margin-bottom: 50px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.2);
+
+    img {
+        width: 100%;
+        margin-bottom: -5px
+    }
+}
+
+.news-one-date {
+    font-size: 18px;
+    text-align: center;
+    color: #8e8e8e;
+    margin-bottom: 40px;
+
+}
+
+.news-subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #595959;
+
+    &:after {
+        content: "";
+        width: 100px;
+        height: 1px;
+        background: @color_text;
+        display: block;
+        margin: 0 auto;
+        margin-top: 40px;
+
+    }
+}
+
+.news-one-gall {
+    width: ~'calc(1360px + 20px)';
+    margin-left: -250px;
+
+    .swiper-slide {
+        display: inline-block;
+        width: auto;
+        margin: 10px;
+
+        img {
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+    }
+
+    .button-next {
+        content: "";
+        display: none;
+        .sprite(@next-dark);
+        position: absolute;
+        top: 50%;
+        right: 0;
+        margin-top: -8px;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .button-prev {
+        content: "";
+        display: none;
+        .sprite(@prev-dark);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        margin-top: -8px;
+        z-index: 10;
+        cursor: pointer;
+    }
+}
+
+.link-back {
+    display: inline-block;
+}
+
+.product-list--tovar {
+    background: @blue;
+    color: #fff;
+}
+
+.product-list--uslug {
+    background: @green;
+    color: #fff;
+}
+
+.product-list--suvenir {
+    background: @red;
+    color: #fff;
+}
+
+.product-list--print {
+    background: @yellow;
+    color: #fff;
+}
+
+
+.product-list__descr {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.product-list-box {
+    word-spacing: -.35em;
+    max-width: 1195px;
+    margin: 0 auto;
+    .services-item {
+        margin: 0 10px;
+        margin-bottom: 20px;
+    }
+}
+
+
+.product-filtr {
+    margin-bottom: 30px;
+}
+
+.filtr-type {
+    margin-bottom: 30px;
+    word-spacing: -.35em;
+    a {
+        display: inline-block;
+        padding: 11px 20px;
+        border: 1px solid transparent;
+        background: #f7f8fb;
+        color: #858995;
+        font-size: 14px;
+        border-radius: 25px;
+        margin-right: 10px;
+
+        &.active {
+            border-color: #b9bdc7;
+            color: #353f56;
+        }
+
+        &:hover {
+
+        }
+    }
+}
+
+.filtr-sort {
+    color: #818181;
+    font-size: 14px;
+    margin-bottom: 20px;
+    a {
+        color: #858995;
+        &:hover {
+            color: #353f56;
+        }
+        &.active {
+            color: #353f56;
+        }
+    }
+    i {
+        margin: 0 5px;
+        display: inline-block;
+    }
+}
+
+.catalog-show {
+    margin-bottom: 30px;
+
+    a {
+        color: #858995;
+        
+        &:hover {
+            color: #353f56;
+        }
+
+        &.active {
+            color: #353f56;
+        }
+    }
+    i {
+        margin: 0 5px;
+        display: inline-block;
+    }
+}
+
+.filtr-pager {
+    color: #818181;
+    font-size: 14px;
+    .active {
+        font-weight: 700;
+    }
+}
+
+.filtr-show {
+    color: #818181;
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.product-list {
+    word-spacing: -.35em;
+}
+
+.product-item {
+    position: relative;
+    border-radius: 5px;
+    display: inline-block;
+    width: 180px;
+
+    img {
+        border-radius: 5px 5px 0 0;
+        border: 2px solid #f7f8fb;
+        width: 100%;
+    }
+}
+
+.product-item-wrap {
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 20px;
+    background: transparent;
+    transition: all 0.3s;
+
+    &:hover {
+        background: #f7f8fb;
+
+        .product-item__title {
+            color: #467dd1;
+        }
+    }
+}
+
+.product-item-bottom {
+    background: #f7f8fb;
+    padding: 20px 10px;
+    height: 140px;
+    margin-top: -5px;
+}
+
+.product-item__title {
+    color: #353f56;
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.product-item__price {
+    font-size: 18px;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #000;
+}
+
+.side {
+    width: 250px;
+    border-radius: 5px;
+    margin-top: -190px;
+    float: left;
+    margin-left: 60px;
+
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: #fff;
+            display: block;
+            padding: 20px;
+            line-height: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+
+            &:hover {
+                background: rgba(255,255,255,0.1);
+            }
+        }
+    }
+}
+
+.side--tovar {
+    background: @blue;
+    color: #fff;
+}
+
+.side--uslug {
+    background: @green;
+    color: #fff;
+}
+
+.side--suvenir {
+    background: @red;
+    color: #fff;
+}
+
+.side--print {
+    background: @yellow;
+    color: #fff;
+}
+
+.content-side {
+    margin-left: 340px;
+    max-width: 800px;
+}
+
+.head-side {
+    padding: 180px 0 40px;
+    margin-left: 340px;
+    .breadcrumbs {
+        text-align: left;
+    }
+
+    .head-title {
+        text-align: left;
+    }
+}
+
+.side-title {
+    font-size: 24px;
+    font-weight: 700;
+    padding: 46px 20px;
 }

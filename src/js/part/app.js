@@ -268,4 +268,34 @@ $(document).ready(function() {
 
     $('.services-item-bottom__title').hyphenate();
 
+
+    var newsSlider = new Swiper ('.news-one-gall', {
+        // Optional parameters
+        loop: false,
+        paginationClickable: true,
+        centeredSlides: true,
+        nextButton: '.button-next',
+        prevButton: '.button-prev',
+        breakpoints: {
+            760: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+            },
+            1920: {
+                slidesPerView: 'auto',
+                spaceBetween: 10,
+            }
+        }
+    });
+
+
+    $(window).resize(function() {
+        if ( $(window).width() > 720 ) {
+            $('.swiper-slide').css('width','auto')
+        }
+    })
+
+    $('.product-item').each(function() {
+        $(this).wrap('<div class="product-item-wrap"></div>')
+    });
 });
