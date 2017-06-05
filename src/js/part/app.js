@@ -293,9 +293,24 @@ $(document).ready(function() {
         if ( $(window).width() > 720 ) {
             $('.swiper-slide').css('width','auto')
         }
+
+
     })
 
     $('.product-item').each(function() {
         $(this).wrap('<div class="product-item-wrap"></div>')
     });
+
+    if ( $(window).width() < 1024 ) {
+        $('.side').on('click',function(event) {
+            if ( !$(this).hasClass('opened') ) {
+                $(this).addClass('opened');
+            }
+        });
+        $('.side-title').on('click',function(event) {
+            event.stopPropagation();
+            $('.side').toggleClass('opened');
+        });
+
+    }
 });
