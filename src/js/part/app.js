@@ -288,6 +288,24 @@ $(document).ready(function() {
         }
     });
 
+    var cardSlider = new Swiper ('.card-photo', {
+        // Optional parameters
+        loop: false,
+        paginationClickable: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        breakpoints: {
+            760: {
+                    slidesPerView: 'auto',
+                    spaceBetween: 10,
+            },
+            1920: {
+                    slidesPerView: 1,
+            }
+        },
+        pagination: '.swiper-pagination'
+    });
+
 
     $(window).resize(function() {
         if ( $(window).width() > 720 ) {
@@ -313,4 +331,7 @@ $(document).ready(function() {
         });
 
     }
+
+    
+
 });

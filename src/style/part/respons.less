@@ -166,6 +166,11 @@
         margin-left: 280px;
     }
 
+    .card-photo {
+        margin-top: -240px;
+        margin-left: 0; 
+    }
+
 }
 
 @media screen and (max-width: 1024px) { // планшет вертикально
@@ -364,7 +369,7 @@
     }
 
     .content {
-        padding: 70px 30px;
+        padding: 40px 30px;
     }
 
     .head-inn {
@@ -393,13 +398,7 @@
     }
 
     .product-item-wrap {
-        &:nth-child(3n) {
-            margin-right: -10px;
-        }
-
-        &:nth-child(3n+1) {
-            margin-left: -10px;
-        }
+        
     }
 
     .content-side {
@@ -482,7 +481,19 @@
         width: 200px;
     }
 
+    .card-photo {
+        width: 180px;
+        margin-left: 0;
+        margin-top: -210px;
+    }
 
+    .content-side--card {
+        margin-left: 210px;
+    }
+
+    .head-side--card {
+        margin-left: 210px;
+    }
 
 }
 
@@ -1108,6 +1119,73 @@
 
     .filtr-sort {
         margin-bottom: 15px;
+    }
+
+    .card-photo {
+        float: none;
+        width: 100%;
+        margin-top: -60px;
+        margin-bottom: 30px;
+
+        .swiper-pagination {
+            display: block;
+        }
+    }
+
+    .tovar-buy__button {
+        font-size: 12px;
+        width: 130px;
+        font-weight: 400;
+        height: 40px;
+    }
+
+    .tovar-buy__price {
+        font-size: 24px;
+    }
+
+    .content-col-3 {
+        width: 50%;
+        display: inline-block;
+        vertical-align: top;
+        padding-left: 20px;
+
+        &:nth-child(3n+1) {
+            padding-left: 20px;
+        }
+
+        &:nth-child(2n+1) {
+            padding-left: 0px;
+        }
+    }
+
+    td{
+        vertical-align: top;
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    .contact-title {
+        font-size: 20px;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .form-line {
+        input {
+            font-size: 12px;
+            height: 40px;
+        }
+
+        textarea {
+            font-size: 12px;
+            height: 80px;
+        }
+    }
+
+    .quaptcha-img {
+        img {
+            height: 40px;
+        }
     }
 
 }

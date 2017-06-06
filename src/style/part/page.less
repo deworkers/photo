@@ -1174,12 +1174,29 @@ body {
 .content {
     background: #fff;
     padding: 70px 70px;
+    word-spacing: -0.35em;
 
     .column {
         columns: 2;
         column-gap: 40px;
     }
+ 
+}
 
+.column-3 {
+    display: table;
+    width: 100%;
+}
+
+.content-col-3 {
+    width: 33%;
+    display: table-cell;
+    vertical-align: top;
+    padding-left: 50px;
+
+    &:nth-child(3n+1) {
+        padding-left: 0px;
+    }
 }
 
 
@@ -1537,6 +1554,10 @@ body {
     bottom: 10px;
     left: 10px;
     color: #000;
+
+    span {
+        font-size: 14px;
+    }
 }
 
 .side {
@@ -1545,6 +1566,7 @@ body {
     margin-top: -190px;
     float: left;
     margin-left: 60px;
+    overflow: hidden;
 
     ul {
         list-style: none;
@@ -1626,4 +1648,164 @@ body {
     font-size: 24px;
     font-weight: 700;
     padding: 46px 20px;
+}
+
+.tovar-descr {
+
+}
+
+.tovar-descr__one {
+    padding: 5px 0;    
+    span {
+        color: #959595; 
+    }
+}
+
+
+.tovar-buy {
+    margin-bottom: 35px;
+}
+
+.tovar-buy__button {
+    vertical-align: middle;
+    display: inline-block;
+    width: 130px;
+    height: 50px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 30px;
+}
+
+.tovar-buy__price {
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #000;
+    i {
+        font-weight: 400;
+    }
+}
+
+.card-photo {
+    width: 250px;
+    border-radius: 5px;
+    margin-top: -190px;
+    float: left;
+    margin-left: 60px;
+    box-shadow: 0 0 25px rgba(0,0,0,0.1);
+    background: #fff;
+
+    .swiper-pagination {
+        position: relative;
+        bottom: 0;
+        padding: 15px;
+        margin: 0;
+    }
+    
+}
+
+.card-photo--tovar {
+    border-radius: 5px;
+
+    .swiper-pagination {
+        background: #556487;
+    }
+}
+
+.tovar-buy__button--tovar {
+    background: lighten(@blue, 10%);
+    color: #fff;
+}
+
+.tovar-buy__button--suvenir {
+    background: @red;
+    color: #fff;
+}
+
+
+
+.ruble {
+    font-family: @font-ruble;
+    font-style: normal;
+}
+
+
+.contact-form {
+}
+
+.contact-box {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.contact-title {
+    font-size: 36px;
+    color: #fff;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.form-line {
+    margin-bottom: 20px;
+    input {
+        width: 100%;
+        border: none;
+        outline: none;
+        height: 50px;
+        font-size: 16px;
+        padding: 0 15px;
+        border-radius: 5px;
+        background: #eff0f7;
+    }
+
+    textarea {
+        width: 100%;
+        border: none;
+        outline: none;
+        height: 100px;
+        font-size: 16px;
+        padding: 15px;
+        font-family: @font;
+        border-radius: 5px;
+        background: #eff0f7;
+    }
+
+    button {
+        display: block;
+        margin: 30px auto 0;
+        width: 160px;
+        height: 50px;
+        border-radius: 25px;
+        background: @red;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #fff;
+        box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    }
+}
+
+.quaptcha-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.quaptcha-input {
+    display: inline-block;
+    padding-left: 110px;
+    width: 100%;
+}
+
+#map {
+    height: 500px;
+    background: #ddd;
 }

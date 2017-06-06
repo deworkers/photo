@@ -1,9 +1,17 @@
 @import "sprite.less";
 
+@font-face {
+    font-family: 'ALS Rubl';
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/rouble.woff') format('woff');
+}
+
 //переменные
 @font: 'Arimo', sans-serif;
 @font-title: 'Arimo', sans-serif;
 @font-alt: 'Arimo', sans-serif;
+@font-ruble: 'ALS Rubl';
 
 @color_white: #fff;
 @color_text: #595959;
@@ -205,7 +213,8 @@ table{
 }
 
 td{
-
+    vertical-align: top;
+    line-height: 24px;
 }
 
 ul, ol{
