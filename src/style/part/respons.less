@@ -7,6 +7,7 @@
     }
 
     .menu-one {
+        margin-left: 0 !important;
         a {
             padding: 10px 15px !important;
         }
@@ -14,6 +15,7 @@
 
     .head {
         padding: 0 60px;
+        height: 390px;
     }
 
     .head-top__phone,
@@ -163,11 +165,10 @@
     }
 
     .head-side {
-        margin-left: 280px;
+        padding-left: 280px;
     }
 
     .card-photo {
-        margin-top: -240px;
         margin-left: 0; 
     }
 
@@ -194,6 +195,7 @@
 
     .head {
         padding: 0 20px;
+        height: 310px;
     }
 
     .head-logo {
@@ -352,6 +354,12 @@
         padding: 30px 0;
     }
 
+    .services-item {
+        width: 180px;
+        padding: 0;
+        border-radius: 5px;
+    }
+
     .services-item-bottom__title {
         font-size: 16px;
     }
@@ -373,7 +381,7 @@
     }
 
     .head-inn {
-        padding: 80px 30px; 
+        padding: 0px 30px; 
     }
 
     .news-one {
@@ -406,13 +414,14 @@
     }
 
     .head-side {
-        margin-left: 110px;
+        padding-left: 110px;
     }
 
     .side {
         width: 70px;
         height: 310px;
         cursor: pointer;
+        margin-top: -160px;
         position: absolute;
         z-index: 10;
 
@@ -484,7 +493,6 @@
     .card-photo {
         width: 180px;
         margin-left: 0;
-        margin-top: -210px;
     }
 
     .content-side--card {
@@ -492,7 +500,7 @@
     }
 
     .head-side--card {
-        margin-left: 210px;
+        padding-left: 210px;
     }
 
 }
@@ -500,6 +508,22 @@
 @media screen and (max-width: 720px) { // планшет горизонтально
     .content {
         padding: 40px 20px;
+    }
+
+    .content-side--card {
+        margin-top: 220px;
+    }
+
+    .head {
+        height: 210px;
+    }
+
+    .card-photo {
+        height: auto;
+
+        img {
+            height: 235px;
+        }
     }
 
 
@@ -653,9 +677,6 @@
         //padding-left: 30px;
     }
 
-    .personal-one img {
-        margin-bottom: 5px;
-    }
 
     .personal-one__position {
         font-size: 9px;
@@ -852,7 +873,8 @@
     }
 
     .head-inn {
-        padding: 20px 20px 40px;
+        padding: 0px 20px 0px;
+        bottom: 40px;
     }
 
     .head-title {
@@ -1051,6 +1073,7 @@
     .side {
         width: 100%;
         position: relative;
+        overflow: visible;
         height: auto;
         margin-top: -50px;
         margin-bottom: 20px;
@@ -1105,8 +1128,10 @@
     }
 
     .head-side {
-        margin-left: 0;
-        padding-top: 30px;
+        position: relative;
+        padding-left: 0;
+        padding-top: 10px;
+        bottom: 0;
     }
 
     .filtr-type {
@@ -1122,14 +1147,21 @@
     }
 
     .card-photo {
-        float: none;
         width: 100%;
-        margin-top: -60px;
-        margin-bottom: 30px;
+        margin: 20px 0;
+        position: relative;
 
         .swiper-pagination {
             display: block;
         }
+
+        img {
+            width: auto;
+        }
+    }
+
+    .tovar-buy {
+        margin-bottom: 20px;
     }
 
     .tovar-buy__button {
@@ -1186,6 +1218,10 @@
         img {
             height: 40px;
         }
+    }
+
+    .tovar-descr__one {
+        font-size: 12px;
     }
 
 }
