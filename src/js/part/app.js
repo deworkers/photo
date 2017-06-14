@@ -319,6 +319,24 @@ $(document).ready(function() {
             $('.card-photo img').css('width','100%')
         }
 
+        if ( $(window).width() < 720 ) {
+            $('.results-list-inn').each(function() {
+
+                if ( $(this).find('a').hasClass('services-item') ) {
+                    $(this).parents('.results-list').css('marginTop','60px');
+                    $(this).find('.results-more').css('marginTop','20px');
+                }
+
+                if ( $(this).find('a').hasClass('product-item') ) {
+                    $(this).parents('.results-list').css('marginTop','100px');
+                    $(this).find('.results-more').css('marginTop','-10px');
+                }
+            });
+        } else {
+            $('.results-list').css('marginTop','100px');
+            $('.results-more').css('marginTop','0px');
+        }
+
     })
 
     $('.product-item').each(function() {
@@ -338,17 +356,5 @@ $(document).ready(function() {
 
     }
 
-    $('.results-list-inn').each(function() {
-
-        if ( $(this).find('a').hasClass('services-item') ) {
-            $(this).parents('.results-list').css('marginTop','60px');
-            $(this).find('.results-more').css('marginTop','20px');
-        }
-
-        if ( $(this).find('a').hasClass('product-item') ) {
-            $(this).parents('.results-list').css('marginTop','100px');
-            $(this).find('.results-more').css('marginTop','-10px');
-        }
-    });
 
 });
