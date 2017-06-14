@@ -172,6 +172,10 @@
         margin-left: 0; 
     }
 
+    .results-list-inn {
+        max-width: 815px;
+    }
+
 }
 
 @media screen and (max-width: 1024px) { // планшет вертикально
@@ -479,6 +483,7 @@
                 display: none;
             }
         }
+
     }
 
     .side-title {
@@ -501,6 +506,10 @@
 
     .head-side--card {
         padding-left: 210px;
+    }
+     
+    .results-list-inn {
+        max-width: 610px;
     }
 
 }
@@ -1222,6 +1231,34 @@
 
     .tovar-descr__one {
         font-size: 12px;
+    }
+
+    .results-list {
+        width: ~'calc(100% + 40px)';
+        margin-left: -20px;
+        margin-top: 80px;
+        .services-item {
+            width: 80px;
+            margin: -40px 5px 50px;
+        }
+
+        .product-item-wrap {
+            margin: -80px 5px 90px;
+            &:nth-child(3n+1) {
+                margin: -80px 5px 90px;
+            }
+        }
+    }
+
+    .results-list-inn {
+        max-width: 310px;
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .results-more {
+        width: 140px;
+        padding: 10px 20px;
     }
 
 }

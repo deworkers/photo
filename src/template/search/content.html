@@ -1,9 +1,18 @@
 <div class="wrap">
     <div class="content">
         <div class="content-search">
-            Найдено результатов: 22
+            <div class="content-search-form">
+                <form id="search-form" action="" method="post">
+                    <input class="search-form__input search-form__input--mobile" type="text" placeholder="Введите искомое слово">
+                    <button class="search-form__button search-form__button--mobile"></button>
+                </form>
+            </div>
+            
+            <div class="search-count">
+                Найдено результатов: 22
+            </div>
 
-            <div class="filtr-type">
+            <div class="filtr-type filtr-type--search">
                 <a href="#" class="active">Везде</a>
                 <a href="#">Услуги ( 9 )</a>
                 <a href="#">Товары ( 4 )</a>
@@ -63,6 +72,8 @@
                                 <div class="services-item-bottom__section">Товары</div>
                             </div>
                         </a>
+                        
+                        <a href="#" class="results-more">Смотреть все</a>
                     </div>
                 </div>
             </div>
@@ -70,55 +81,59 @@
             <div class="results-one">
                 <div class="results-one__title">Товары</div>
                 <div class="results-list">
-                    <a href="#" class="product-item">
-                        <img src="/tmp/product-1.jpg" alt="">
-                        <div class="product-item-bottom">
-                            <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
-                            <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
-                        </div>
-                    </a>
-                    <a href="#" class="product-item">
-                        <img src="/tmp/product-1.jpg" alt="">
-                        <div class="product-item-bottom">
-                            <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
-                            <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
-                        </div>
-                    </a>
-                    <a href="#" class="product-item">
-                        <img src="/tmp/product-1.jpg" alt="">
-                        <div class="product-item-bottom">
-                            <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
-                            <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
-                        </div>
-                    </a>
-                    <a href="#" class="product-item">
-                        <img src="/tmp/product-1.jpg" alt="">
-                        <div class="product-item-bottom">
-                            <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
-                            <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
-                        </div>
-                    </a>
-                    <a href="#" class="product-item">
-                        <img src="/tmp/product-1.jpg" alt="">
-                        <div class="product-item-bottom">
-                            <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
-                            <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
-                        </div>
-                    </a>
-                    <a href="#" class="product-item">
-                        <img src="/tmp/product-1.jpg" alt="">
-                        <div class="product-item-bottom">
-                            <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
-                            <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
-                        </div>
-                    </a>
-                    <a href="#" class="product-item">
-                        <img src="/tmp/product-1.jpg" alt="">
-                        <div class="product-item-bottom">
-                            <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
-                            <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
-                        </div>
-                    </a>
+                    <div class="results-list-inn">
+                        <a href="#" class="product-item">
+                            <img src="/tmp/product-1.jpg" alt="">
+                            <div class="product-item-bottom">
+                                <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
+                                <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="product-item">
+                            <img src="/tmp/product-1.jpg" alt="">
+                            <div class="product-item-bottom">
+                                <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
+                                <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="product-item">
+                            <img src="/tmp/product-1.jpg" alt="">
+                            <div class="product-item-bottom">
+                                <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
+                                <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="product-item">
+                            <img src="/tmp/product-1.jpg" alt="">
+                            <div class="product-item-bottom">
+                                <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
+                                <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="product-item">
+                            <img src="/tmp/product-1.jpg" alt="">
+                            <div class="product-item-bottom">
+                                <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
+                                <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="product-item">
+                            <img src="/tmp/product-1.jpg" alt="">
+                            <div class="product-item-bottom">
+                                <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
+                                <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
+                            </div>
+                        </a>
+                        <a href="#" class="product-item">
+                            <img src="/tmp/product-1.jpg" alt="">
+                            <div class="product-item-bottom">
+                                <div class="product-item__title">USB Flash Verbatim Tattoo Edition «Карп Кои» 8 ГБ</div>
+                                <div class="product-item__price"><span>от</span> 410 <i class="ruble">a</i></div>
+                            </div>
+                        </a>
+                        
+                        <a href="#" class="results-more">Смотреть все</a>
+                    </div>
                 </div>
             </div>
         </div>

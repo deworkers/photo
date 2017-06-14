@@ -338,11 +338,17 @@ $(document).ready(function() {
 
     }
 
+    $('.results-list-inn').each(function() {
 
-    $('.results-list').each(function() {
-        height = $(this).find('.results-list-inn').height();
-        $(this).height(height-100);
+        if ( $(this).find('a').hasClass('services-item') ) {
+            $(this).parents('.results-list').css('marginTop','60px');
+            $(this).find('.results-more').css('marginTop','20px');
+        }
+
+        if ( $(this).find('a').hasClass('product-item') ) {
+            $(this).parents('.results-list').css('marginTop','100px');
+            $(this).find('.results-more').css('marginTop','-10px');
+        }
     });
-    
 
 });
