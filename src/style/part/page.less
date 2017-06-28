@@ -818,6 +818,7 @@ body {
 
 .modal__close {
     background: @red;
+    z-index: 10;
     width: 50px;
     height: 50px;
     border-radius: 25px;
@@ -1578,7 +1579,8 @@ body {
     vertical-align: middle;
     display: inline-block;
     width: 130px;
-    height: 50px;
+    text-align: center;
+    padding: 15px 0;
     border: none;
     outline: none;
     border-radius: 5px;
@@ -1588,6 +1590,10 @@ body {
     text-transform: uppercase;
     margin-right: 30px;
     cursor: pointer;
+
+    &:hover {
+        color: #fff;
+    }
 }
 
 .tovar-buy__price {
@@ -1641,6 +1647,36 @@ body {
 .contact-box {
     max-width: 400px;
     margin: 0 auto;
+}
+
+.order-modal {
+    max-width: 620px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.order-modal__title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #000;
+}
+
+.order-modal__subtitle {
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000;
+}
+
+.order-box {
+    background: #353f56;
+    border-radius: 10px;
+    padding: 50px 70px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .contact-title {
