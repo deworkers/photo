@@ -36,6 +36,7 @@ $(document).ready(function() {
         modal.fadeOut(200);
         overlay.fadeOut(200);
         $('html, body').removeClass('j-noScroll');
+        $('.personal-slider').fadeOut(200);
     });
 
     overlay.click(function(event) {

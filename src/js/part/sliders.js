@@ -150,4 +150,29 @@ $(document).ready(function() {
         pagination: '.swiper-pagination'
     });
 
+
+
+    var personalOne = new Swiper ('.personal-more', {
+        // Optional parameters
+        loop: false,
+        paginationClickable: true,
+        centeredSlides: true,
+        slidesPerView: 1,
+        hashnav: true,
+        hashnavWatchState: true,
+        nextButton: '.personal-next',
+        prevButton: '.personal-prev',
+        paginationType: 'fraction',
+        pagination: '.personal-counter'
+    });
+
+    $('.personal-one').on('click', function(event) {
+        event.preventDefault();
+        $('.personal-slider').fadeIn();
+        personalOne.update();
+        thisId = $(this).data('id')-1;
+        personalOne.slideTo(thisId, 300, function(){
+            //
+        });
+    });
 });

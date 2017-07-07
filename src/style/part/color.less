@@ -39,38 +39,63 @@
 
 // меню разделов
 .side--tovar {
-    background: @blue;
+    background: #326fcc;
     color: #fff;
 
     ul {
-        background: @blue;
+        background: #326fcc;
+        a {
+            border-top-color: #467dd1;
+            &:hover {
+                background-color: #467dd1;
+            }
+        }
     }
 }
 
 .side--uslug {
-    background: @green;
+    background: #2ac263;
     color: #fff;
 
     ul {
-        background: @green;
+        background: #2ac263;
+        a {
+            border-top-color: #3fc872;
+            &:hover {
+                background-color: #3fc872;
+            }
+        }
     }
 }
 
 .side--suvenir {
-    background: @red;
+    background: #de3d4a;
     color: #fff;
 
     ul {
-        background:  @red;
+        background:  #de3d4a;
+        a {
+            border-top-color: #e1505c;
+            &:hover {
+                background-color: #e1505c;
+            }
+        }
     }
 }
 
 .side--print {
-    background: @yellow;
+    background: #ecb11d;
     color: #fff;
 
     ul {
-        background:  @yellow;
+        background: #ecb11d;
+        a {
+            color: #fff;
+            border-top-color: #efbd3f;
+            &:hover {
+                background-color: #efbd3f;
+            }
+        }
     }
 }
 
@@ -93,7 +118,7 @@
 
 .product-list--print {
     background: @yellow;
-    color: #fff;
+    color: #000;
 }
 
 
@@ -152,7 +177,7 @@
 
 
 //главное меню
-.menu-color(@menu-color) {
+.menu-color(@menu-color, @menu-color-in, @menu-color-border, @menu-color-h) {
     border: 1px solid @menu-color;
     position: relative;
 
@@ -166,9 +191,9 @@
         width: 280px;
 
         li {
-            background: @menu-color;
+            background: @menu-color-in;
             position: relative;
-            border-bottom: 1px solid  darken(@menu-color, 5%);
+            border-bottom: 1px solid  @menu-color-border;
             
             &:hover {
                 ul {
@@ -181,8 +206,15 @@
                     margin: 0;
 
                     li {
-                        background: lighten(@menu-color, 20%);
+                        background: @menu-color-h;
                     }
+                }
+            }
+
+            &:nth-child(4) {
+                ul {
+                    left: auto;
+                    right: 100%;
                 }
             }
         }
@@ -196,7 +228,7 @@
             height: 0;
             border-style: solid;
             border-width: 0 10px 10px 10px;
-            border-color: transparent transparent @menu-color transparent;
+            border-color: transparent transparent @menu-color-in transparent;
         }
 
         a {
@@ -213,34 +245,34 @@
 
     li {
         a:hover {
-            background: lighten(@menu-color, 10%);
+            background: @menu-color-h;
         }
     }
 
 }
 
 .menu-one--yellow {
-    .menu-color(@yellow);
+    .menu-color(@yellow, #ecb11d, #dba214, #f2b827);
 
     &:hover {
         > a {
-            color: #000;
+            color: #fff;
         }
     }
 
     li a {
-        color: #000;
+        color: #fff;
     }
 }
 
 .menu-one--red {
-    .menu-color(@red);
+    .menu-color(@red, #c73743, #b22c37, #d23a47);
 }
 
 .menu-one--green {
-    .menu-color(@green);
+    .menu-color(@green, #24a354, #1a8d45, #2eb461);
 }
 
 .menu-one--blue {
-    .menu-color(@blue);
+    .menu-color(@blue, #295ca8, #1c4c94, #3165b4);
 }
